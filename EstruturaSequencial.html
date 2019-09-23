@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estrutura Sequencial - Exercicio 1</title>
+
+</head>
+<body>
+    <div>
+      <h1>Parte 1: Estrutura Sequencial</h1>
+    </div>
+    <!-- EXERCICIO 1.1 -->
+    <div>
+     <h3>Exercício 1.1</h3>
+     <p>Fazer um programa para ler o código de uma peça 1, o número de peças 1, 
+        o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 
+        e o valor unitário de cada peça 2.<br> Calcule e mostre o valor a ser pago.</p>
+    </div>
+                
+    <div>
+     <label>Código:</label> <input type="text">
+     <label>Número de peças:</label> <input id="qtdPeca1" type="text">
+     <label>Valor:</label> <input id="valor1" type="text">
+    </div>
+    </br>
+    <div>
+      <label>Código:</label> <input type="text">
+      <label>Número de peças:</label> <input id="qtdPeca2" type="text">
+      <label>Valor:</label> <input id="valor2" type="text">
+    </div><br>
+    <div class="botao"><input type="submit" value="Calcular" onclick="ValorPeca()"></div>
+            
+    <div>
+      <strong><h4 id="exibir"></h4></strong>
+    </div>
+      <!-- EXERCICIO 1.2 -->
+          
+    <div>
+      <h3>Exercício 1.2</h3>
+      <p>Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro
+         casas decimais conforme exemplos.</br>
+         Fórmula: area = π.raio°</br>
+         Considere o valor de π = 3.14159</p>
+    </div>
+    <div>
+     <label>Informe o raio do círculo:</label> <input type="text" id="raio" placeholder="Informe o valor do raio">
+     <div class="botao"><input type="submit" value="Calcular" onclick="AreaCirc()"></div>
+    </div>
+    <div>
+     <strong><h4 id="exibir2"></h4></strong>
+    </div>
+            
+    <script src="js/CalculoEstSequen.js"></script>     
+</body>
+</html>

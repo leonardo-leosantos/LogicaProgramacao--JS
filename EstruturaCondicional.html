@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Estrutura Condicional - Exercico 2</title>
+</head>
+<body>
+    <div>
+        <h1>Parte 2: Estrutura Condicional</h1>
+    </div>
+    <!--EXERCICIO 2.1-->
+    <div>
+      <h3>Exercício 2.1</h3>
+      <p>Com base na tabela de preços ao lado, faça um programa que leia o código de um item e a
+        quantidade deste item. A seguir, calcule e mostre o valor da conta a pagar.</p>
+    </div>
+    <label>Informe o código:</label> <input type="text" id="cod">
+    <label>Informe a quantidade:</label> <input type="text" id="qtd">
+    <div class="botao"><input type="submit" value="Enviar" onclick="CalculaPreco()"></div>
+    <div>
+      <strong><h4 id="exibir"></h4></strong>
+    </div>
+
+    <!--EXERCICIO 2.2-->
+    <div>
+       <h3>Exercício 2.2</h3>
+       <p>Ler os valores dos três coeficientes "a", "b" e "c" de uma equação do segundo grau (axº2 + bx + c = 0).</br>
+        Em seguida, mostrar os valores das raízes da equação, conforme exemplos, usando a fórmula de Baskara (veja
+        abaixo). Se a equação não possuir raízes (o valor de "a" não pode ser zero, e o valor de "delta" não pode ser
+        negativo), mostrar uma mensagem "Impossivel calcular". </p>
+        <p><b>Insira os valores:</b></p>
+        <div>
+          <label>a= </label><input id="a" type="text">
+          <label>b= </label><input id="b" type="text">
+          <label>c= </label><input id="c" type="text">
+        </div>
+        <div><br></div>
+        <div class="botao"><input type="submit" value="Enviar" onclick="CalcEquacao()"></div>
+        <div>
+          <strong><h4 id="exibir"></h4></strong>
+        </div>
+    </div>
+ 
+ <script src="js/CalculoEstCond.js"> </script>
+</body>
+</html>
