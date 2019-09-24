@@ -29,16 +29,34 @@ function CalculaPreco(){
 //CALCULAR EQUACAO 2°GRAU
 function CalcEquacao(){
     var delta = (parseFloat(document.getElementById("b").value) * parseFloat(document.getElementById("b").value)) -4 *
-    (parseFloat(document.getElementById("a").value) * parseFloat(document.getElementById("c").value))
+        (parseFloat(document.getElementById("a").value) * parseFloat(document.getElementById("c").value))
+        console.log("delta = " + delta)
 
-    console.log(delta)
+    var a = parseFloat(document.getElementById("a").value)
+    
+    if(delta > 0 & a > 0){
 
-    var x1 = -(parseFloat(document.getElementById("b").value)) + Math.sqrt(delta) /
-     (2 * parseFloat(document.getElementById("a").value))
+        var raiz = Math.sqrt(delta)
+        console.log("raiz = " + raiz)
 
-    var x2 = -(parseFloat(document.getElementById("b").value)) - Math.sqrt(delta) /
-     (2 * parseFloat(document.getElementById("a").value))  
+        var x1 = ((- parseFloat(document.getElementById("b").value)) + raiz) /
+        (2 * parseFloat(document.getElementById("a").value))
 
-     console.log(x1)
-     console.log(x2)
+        var x2 = ((- parseFloat(document.getElementById("b").value)) - raiz) / 
+        (2* parseFloat(document.getElementById("a").value))
+
+        x1 = x1.toFixed(5)
+        x2 = x2.toFixed(5)
+    
+        console.log("x1 = " + x1)
+        console.log("x2 = " + x2)
+
+        var result = document.getElementById("exibir2")
+        result.innerText = "x1 = "+x1 + " x2 = "+x2 + " delta = "+ delta
+
+    }
+    else{
+        var result = document.getElementById("exibir2")
+        result.innerText = "IMPOSSÍVEL CALCULAR"
+    } 
 }
